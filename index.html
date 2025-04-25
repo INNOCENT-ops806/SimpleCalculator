@@ -7,42 +7,45 @@
     <title>SimpleCalculator</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name="description" content="Simple Calculator With Dark Mode." />
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/dark.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' id="theme-stylesheet" media='screen' href='styles/dark.css'>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="screen">
-            <input type="text" name="result" id="result" placeholder="0.0" readonly>
-            <input type="button" value="AC" id="clear-button">
+            <input type="text" name="result" id="result" class="result" placeholder="0.0" readonly>
+            <input type="button" value="AC" id="clear-button" onclick="result.value=''">
+            <input type="button" value="🌑" id="theme-btn">
         </div>
         <!-- Buttons -->
-        <div class="first-row">
-            <input type="button" value="1">
-            <input type="button" value="2">
-            <input type="button" value="3">
-            <input type="button" value="+">
-        </div>
-        <div class="second-row">
-            <input type="button" value="4">
-            <input type="button" value="5">
-            <input type="button" value="6">
-            <input type="button" value="-">
+        <div class="buttons">
+            <div class="first-row">
+                <input class="btn" type="button" value="1">
+                <input class="btn" type="button" value="2">
+                <input class="btn" type="button" value="3">
+                <input class="btn" type="button" value="+">
+            </div>
+            <div class="second-row">
+                <input class="btn" type="button" value="4">
+                <input class="btn" type="button" value="5">
+                <input class="btn" type="button" value="6">
+                <input class="btn" type="button" value="-">
+            </div>
+
+            <div class="third-row">
+                <input class="btn" type="button" value="7">
+                <input class="btn" type="button" value="8">
+                <input class="btn" type="button" value="9">
+                <input class="btn" type="button" value="*">
+            </div>
+            <div class="forth-row">
+                <input class="btn" type="button" value="/">
+                <input class="btn" type="button" value="0">
+                <input class="btn" type="button" value=".">
+                <input class="btn" type="button" value="=">
+            </div>
         </div>
 
-        <div class="third-row">
-            <input type="button" value="7">
-            <input type="button" value="8">
-            <input type="button" value="9">
-            <input type="button" value="x">
-        </div>
-        <div class="forth-row">
-            <input type="button" value="/">
-            <input type="button" value="0">
-            <input type="button" value=".">
-            <input type="button" value="=">
-        </div>
     </div>
 
     <!-- Script file -->
