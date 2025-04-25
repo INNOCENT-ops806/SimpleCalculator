@@ -1,0 +1,61 @@
+*{
+    background-color: black;
+}
+.wrapper {
+    width: 365px;
+    height: 75vh;
+    margin: 50px auto;
+}
+
+.screen {
+    width: inherit;
+    height: 15vh;
+    color: black;
+    font-size: 18px;
+
+    .result {
+        padding: 20px 45px;
+        background-color: #9e4747;
+        border: hidden;
+        border-radius: 7.5px;
+        outline: none;
+        font-weight: bolder;
+        font-family: sans-serif;
+    }
+
+    #clear-button {
+        padding: 20px 15px;
+        border-radius: 7.5px;
+        border: hidden;
+        font-weight: bolder;
+        font-family: sans-serif;
+        color: black;
+        background-color: aqua;
+    }
+
+    #theme-btn {
+        padding: 20px 15px;
+        border: hidden;
+        outline: none;
+        border-radius: 7.5px;
+        margin-top: 3.5px;
+        background-color: aqua;
+    }
+}
+
+.buttons {
+    display: block;
+
+}
+
+.btn {
+    padding: 25px;
+    margin: 10px;
+    border-radius: 80%;
+    border: hidden;
+    outline: none;
+    background-color: aqua;
+    &:hover{
+        background-color: rgb(47, 175, 175);
+    }
+}
