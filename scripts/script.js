@@ -17,12 +17,10 @@ themeButton.addEventListener('click', () => {
     }
 });
 
-// On page load, check and apply the saved theme
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme !== null) {
     themeStylesheet.setAttribute('href', savedTheme);
 
-    // Update theme button symbol based on the theme
     if (savedTheme === 'styles/dark.css') {
         themeButton.value = '🌑';
     } else {
@@ -59,7 +57,6 @@ function main() {
                     let result = eval(state.join(""))
                     state = [];
                     state.push(''.concat(result))
-                    //console.log("= ", result)
                     result_view.value = ''.concat(state[state.length - 1])
                 } else {
                     state.push(value)
