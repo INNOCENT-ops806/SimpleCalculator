@@ -3,14 +3,32 @@ const themeStylesheet = document.getElementById('theme-stylesheet');
 
 themeButton.addEventListener('click', () => {
     console.log("clicked the theme button");
+
     if (themeStylesheet.getAttribute('href') === 'styles/dark.css') {
         themeButton.value = '☀️';
         themeStylesheet.setAttribute('href', 'styles/light.css');
+
+        localStorage.setItem('theme', 'styles/light.css');
     } else {
         themeButton.value = '🌑';
         themeStylesheet.setAttribute('href', 'styles/dark.css');
+
+        localStorage.setItem('theme', 'styles/dark.css');
     }
 });
+
+// On page load, check and apply the saved theme
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme !== null) {
+    themeStylesheet.setAttribute('href', savedTheme);
+
+    // Update theme button symbol based on the theme
+    if (savedTheme === 'styles/dark.css') {
+        themeButton.value = '🌑';
+    } else {
+        themeButton.value = '☀️';
+    }
+}
 
 
 function main() {
