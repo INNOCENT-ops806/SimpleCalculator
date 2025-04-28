@@ -21,6 +21,9 @@ The motivation for this project stems from a personal need to avoid borrowing a 
 2. Open the `index.html` file in your browser.
 3. Start using the calculator for your calculations!
 
+## Available online
+**link**: https://innocent-ops806.github.io/SimpleCalculator/
+
 ## Technology Used
 - **HTML** for the structure.
 - **CSS** for styling, including dark and light themes.
