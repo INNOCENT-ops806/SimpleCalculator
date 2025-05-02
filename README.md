@@ -38,6 +38,7 @@ A special thanks to the experience on that particular Tuesday, which sparked the
 ## Dark Theme:
 ![Dark Theme Screenshot](images/Dark%20Theme.png)
 
-## Known Issues
-- **AC Button Behavior**: After clicking the AC (All Clear) button, if a number is added immediately afterward, the calculator may still display the previous entries. This issue is currently being worked on, and improvements are expected in a future update.
+## Fixes & Updates
+### AC Button Behavior Fix
+Previously, after clicking the AC button, entering a new number could still display previous inputs. This issue has been resolved by ensuring a full state reset upon AC press, preventing unintended carryover.
 
