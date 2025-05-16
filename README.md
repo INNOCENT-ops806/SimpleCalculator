@@ -39,6 +39,6 @@ A special thanks to the experience on that particular Tuesday, which sparked the
 ![Dark Theme Screenshot](images/Dark%20Theme.png)
 
 ## Fixes & Updates
-### AC Button Behavior Fix
+##### AC Button Behavior Fix
 Previously, after clicking the AC button, entering a new number could still display previous inputs. This issue has been resolved by ensuring a full state reset upon AC press, preventing unintended carryover.
 
